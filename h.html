@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Happy Birthday</title>
+        <link rel="stylesheet" href="s.css">
+    </head>
+    <body>
+        <div id="stars"></div>
+
+        <div class="container">
+
+            <h1 id="typing"></h1>
+
+            <div class="gift" onclick="openGift()">🎁</div>
+
+            <div id="birthdayCard" class="hidden">
+
+                <h1>ada yang ulang tahun🎉</h1>
+
+                <img src="image.png" alt=" ">
+
+                <h2>💐Selamat Ulang Tahun Sayangku🥳</h2>
+
+                <p>
+                    Semoga sehat selalu, panjang umur, sukses dalam meraih impian, selalu baik baik saja, dan selalu bahagia setiap hari.
+                </p>
+
+                <div class="cake">🎂</div>
+
+                <button onclick="showMessage()">pesan</button>
+
+                <div id="popup" class="popup">
+                    <div class="content">
+
+                        <span class="close" onclick="Close()">❌</span>
+
+                        <h2>pesan</h2>
+                        <p>
+                            Terimakasih sudah menjadi pasangan yang baik..terimakasih pengertiannya selama ini❤️
+                            Maaf yaa ngasihnya telat ngga ada waktu soalnya
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <audio id="music" loop>
+            <source src="m.mp3" type="audio/mpeg">
+        </audio>
+
+        <script src="s.js"></script>
+    </body>
+</html>

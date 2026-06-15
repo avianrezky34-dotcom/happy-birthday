@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #050816;
+    overflow: hidden;
+    height:100vh;
+}
+
+.container{
+    position:relative;
+    z-index: 10;
+    text-align:center;
+    color:white;
+    padding-top:60px;
+}
+
+#typing{
+    min-height:70px;
+    margin-bottom:40px;
+}
+
+.gift{
+    font-size:120px;
+    cursor:pointer;
+    animation:bounce 1s invinite alternate;
+}
+
+@keyframes bounce{
+    from{
+        transfrom: translateY(0);
+    }
+    to{
+        transfrom:translateY(-15px);
+    }
+}
+
+.hidden{
+    display:none;
+}
+
+#birthdayCard{
+    animation:fade 1s;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:scale(.5);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+#birthdayCard img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid white;
+    margin-bottom:20px;
+}
+
+#birthdayCard h2{
+    margin-bottom:15px;
+}
+
+#birthdayCard p{
+    max-width:600px;
+    margin:auto;
+    line-height:1.6;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.cake{
+    font-size:120px;
+    margin-top:15px;
+    animation:shake 1s infinite;
+}
+
+@keyframes shake{
+    0%{transform:rotate(-2deg);}
+    100%{transform:rotate(2deg);}
+}
+
+.star{
+    position:absolute;
+    background:white;
+    border-radius:50%;
+}
+
+.popup{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.7);
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:999;
+}
+
+.content{
+
+    width:90%;
+    max-width:500px;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        135deg,
+        #7e9eff,
+        #75acff
+    );
+
+    color:white;
+
+    text-align:center;
+
+    box-shadow:0 0 30px rgba(255,255,255,.3);
+
+    animation:zoom .5s;
+}
+
+.close{
+    float:right;
+    cursor:pointer;
+    font-size:22px;
+}
+
+@keyframes zoom{
+    from{
+        transform:scale(.5);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
